@@ -4,13 +4,13 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/kmonn/Documents/NetBeansProjects/Software%20Clinica%20Medica%20Metropolitana/src/software/clinica/medica/metropolitana/IngresoUsuario.java</file>
-            <file>file:/C:/Users/kmonn/Documents/NetBeansProjects/Software%20Clinica%20Medica%20Metropolitana/src/software/clinica/medica/metropolitana/PantallaPrincipal.java</file>
             <file>file:/C:/Users/kmonn/Documents/NetBeansProjects/Software%20Clinica%20Medica%20Metropolitana/src/software/clinica/medica/metropolitana/Farmacia.java</file>
+            <file>file:/C:/Users/kmonn/Documents/NetBeansProjects/Software%20Clinica%20Medica%20Metropolitana/src/software/clinica/medica/metropolitana/RegistrosMedicos.java</file>
             <file>file:/C:/Users/kmonn/Documents/NetBeansProjects/Software%20Clinica%20Medica%20Metropolitana/src/software/clinica/medica/metropolitana/MainP.java</file>
-            <file>file:/C:/Users/kmonn/Documents/NetBeansProjects/Software%20Clinica%20Medica%20Metropolitana/src/software/clinica/medica/metropolitana/PerfilMedicoCL.java</file>
             <file>file:/C:/Users/kmonn/Documents/NetBeansProjects/Software%20Clinica%20Medica%20Metropolitana/src/software/clinica/medica/metropolitana/GestorCitas.java</file>
-            <file>file:/C:/Users/kmonn/Documents/NetBeansProjects/Software%20Clinica%20Medica%20Metropolitana/src/software/clinica/medica/metropolitana/RegistroPaciente.java</file>
-            <file>file:/C:/Users/kmonn/Documents/NetBeansProjects/Software%20Clinica%20Medica%20Metropolitana/src/BaseDatos/Usuario.java</file>
+            <file>file:/C:/Users/kmonn/Documents/NetBeansProjects/Software%20Clinica%20Medica%20Metropolitana/src/software/clinica/medica/metropolitana/RegistroPacientes.java</file>
+            <file>file:/C:/Users/kmonn/Documents/NetBeansProjects/Software%20Clinica%20Medica%20Metropolitana/src/BaseDatos/Pacientes.java</file>
+            <file>file:/C:/Users/kmonn/Documents/NetBeansProjects/Software%20Clinica%20Medica%20Metropolitana/src/software/clinica/medica/metropolitana/PantallaMain.java</file>
         </group>
     </open-files>
 </project-private>

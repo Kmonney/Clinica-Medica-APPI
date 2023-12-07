@@ -31,17 +31,17 @@ public class IngresoUsuario extends javax.swing.JFrame {
         initComponents();
         auxKey = generateSecretKey();
         listadoUsuario = new ArrayList<Usuario>();
-        Usuario aux = new Usuario("Kevin","123");
+        Usuario aux = new Usuario("Kevin","Admin131313");
         listadoUsuario.add(aux);
-        aux = new Usuario("Scarlet", "456");
+        aux = new Usuario("Scarlet", "Admin121212");
         listadoUsuario.add(aux);
-        aux = new Usuario("Brandon", "789");
+        aux = new Usuario("Brandon", "Admin111111");
         listadoUsuario.add(aux);
         cifrarListadoUsuarios();
         
     }
     
-    void cifrarListadoUsuarios(){
+     void cifrarListadoUsuarios(){
         try {
             for (Usuario item : listadoUsuario){
                 String temp = encrypt(item.getPwdUsuario(), auxKey);
@@ -114,7 +114,7 @@ txtUsuario.getText().toUpperCase().trim().equals(item.getIdUsuario().toUpperCase
     }
     
     public String encrypt(String data, SecretKey secretKey) throws Exception {
-        Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Pading");
+        Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
         cipher.init(Cipher.ENCRYPT_MODE, secretKey );
         byte[] encryptedBytes =  cipher.doFinal(data.getBytes("UTF-8"));
         return Base64.getEncoder().encodeToString(encryptedBytes);
@@ -216,17 +216,22 @@ txtUsuario.getText().toUpperCase().trim().equals(item.getIdUsuario().toUpperCase
         boolean usuarioValido = validarLogin();
         if (usuarioValido){
             JOptionPane.showMessageDialog(null, "Usuario Valido");
+            MostrarPantallaPrincipal("Kevin");
         }else{
             JOptionPane.showMessageDialog(null, "Usuario Invalido");
         }
     }//GEN-LAST:event_btnIngresoActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    //Aqui se realiza la accion para poder abrir la pantalla principal 
     private  void MostrarPantallaPrincipal(String Usuario) {
-        MainP mainP = new MainP (Usuario);
-        MainP.setvisible(true);
+        try{
+            new PantallaMain().setVisible(true);
+            this.dispose();
+        } catch (Exception e) {
+              e.printStackTrace();
+        }
+        
+        
         
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -255,7 +260,7 @@ txtUsuario.getText().toUpperCase().trim().equals(item.getIdUsuario().toUpperCase
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new IngresoUsuario().setVisible(true);
+               
             }
         });
     }
@@ -271,8 +276,5 @@ txtUsuario.getText().toUpperCase().trim().equals(item.getIdUsuario().toUpperCase
     // End of variables declaration//GEN-END:variables
 
   
-
-    /*private String decrypt(String pwdUsuario, SecretKey auxKey) {
-    throw new UnsupportedOperationException("Not supported yet.");*/ // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 

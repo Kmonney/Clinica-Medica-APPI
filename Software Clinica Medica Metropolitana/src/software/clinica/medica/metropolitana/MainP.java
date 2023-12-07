@@ -4,15 +4,19 @@
  */
 package software.clinica.medica.metropolitana;
 import java.util.Scanner;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  *
  * @author kmonn
  */
-public class MainP {
+public class MainP  {
+    
 
     static void setvisible(boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
     }
 
     public MainP(String usuario) {
